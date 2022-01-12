@@ -1,0 +1,23 @@
+/* about-me style sheet; Jeffrey Jenkins; 1-11-21 */
+
+body{
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+header, main{
+  padding: 0.25em;
+  background-color: ivory;
+  width: 80%;
+  margin: 1vh 5%;
+  border: 2px groove rgb(82, 54, 28);
+}
+h1 {
+  font-size: x-large;
+  font-style: italic;
+}
+h2 {
+  font-size: larger;
+}
+main{
+  text-align: left;
+}
