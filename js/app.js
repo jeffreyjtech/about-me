@@ -13,7 +13,7 @@ let correctcount = 0;
 if (correctanswer === response){
   correctcount++;
   alert('Correct! I have traveled outside the US!');
-  console.log(`Correct on "${question}"`);
+  //console.log(`Correct on "${question}"`);
 } else if ('string' === typeof response) {
   alert('Sorry, wrong answer.');
 } else {
@@ -26,7 +26,7 @@ response = prompt(question).toLowerCase();
 if (correctanswer === response){
   correctcount++;
   alert('Correct! I don\'t hate learning, I love it!');
-  console.log(`Correct on "${question}"`);
+  //console.log(`Correct on "${question}"`);
 } else if ('string' === typeof response) {
   alert('Sorry, wrong answer.');
 } else {
@@ -39,7 +39,7 @@ response = prompt(question).toLowerCase();
 if (correctanswer === response){
   correctcount++;
   alert('Correct! I make delicious bread.');
-  console.log(`Correct on "${question}"`);
+  //console.log(`Correct on "${question}"`);
 } else if ('string' === typeof response) {
   alert('Sorry, wrong answer.');
 } else {
@@ -52,7 +52,7 @@ response = prompt(question).toLowerCase();
 if (correctanswer === response){
   correctcount++;
   alert('Correct! I hate chili peppers and spicy food in general.');
-  console.log(`Correct on "${question}"`);
+  //console.log(`Correct on "${question}"`);
 } else if ('string' === typeof response) {
   alert('Sorry, wrong answer.');
 } else {
@@ -65,7 +65,7 @@ response = prompt(question).toLowerCase();
 if (correctanswer === response){
   correctcount++;
   alert('I\'d pay any sum of money to walk on the Moon.');
-  console.log(`Correct on "${question}"`);
+  //console.log(`Correct on "${question}"`);
 } else if ('string' === typeof response) {
   alert('You serious?');
 } else {
