@@ -14,3 +14,15 @@ if (correctanswer === response){
 } else {
   alert('That wasn\'t even a word... \nMoving on.');
 }
+
+question = 'Do I hate learning?';
+correctanswer = 'no';
+response = prompt(question).toLowerCase();
+if (correctanswer === response){
+  alert('Correct! I don\'t hate learning, I love it!');
+} else if ('string' === typeof response) {
+  alert('Oops, wrong answer.');
+} else {
+  alert('That wasn\'t even a word... \nMoving on.');
+}
+
