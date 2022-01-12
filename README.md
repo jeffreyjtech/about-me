@@ -8,7 +8,7 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 ### Links and Resources
 
-- No references needed currently.
+- I refered to the [MDN typeof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) while writing my JavaScript.
 
 ### Reflections and Comments
 
