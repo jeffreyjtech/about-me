@@ -66,7 +66,6 @@ if (correctanswer === response){
   correctcount++;
   alert('I\'d pay any sum of money to walk on the Moon.');
   console.log(`Correct on "${question}"`);
-  
 } else if ('string' === typeof response) {
   alert('You serious?');
 } else {
