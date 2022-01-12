@@ -12,4 +12,4 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 ### Reflections and Comments
 
-- Creating this first version of this taught me the usefulness of functions. I wanted to use functions to compose the guessing game prompts and answers, but given the requirements I considered that an out of scope goal. As a stop-gap, I used a code block that was easy to copy and easy to fill in with the appropriate information.
+- Creating the first version of this taught me the usefulness of functions. I wanted to use functions to compose the guessing game prompts and answers, but given the requirements I considered that an "out of scope" goal. As a stop-gap, I used a code block that was easy to copy and easy to fill in with the appropriate information.
