@@ -18,24 +18,24 @@ const qarArray = [
 ];
 
 //console.table(qarArray);
-
+personalTrivia();
 let correctcount = 0;
+function personalTrivia(){
+  alert('The following questions will quiz you on some random facts about me. Please answer yes or no.');
 
-alert('The following questions will quiz you on some random facts about me. Please answer yes or no.');
-
-for (let i = qarArray.length-1; i >= 0; i--){
-  let response = prompt(qarArray[i][0]);
-  if (qarArray[i][1] === response.toLowerCase()){
-    correctcount++;
-    alert(qarArray[i][2]);
+  for (let i = qarArray.length-1; i >= 0; i--){
+    let response = prompt(qarArray[i][0]);
+    if (qarArray[i][1] === response.toLowerCase()){
+      correctcount++;
+      alert(qarArray[i][2]);
     //console.log(`Correct on "${qarArray[i][0]}"`);
-  } else if ('string' === typeof response) {
-    alert('Sorry, wrong answer.');
-  } else {
-    alert('That wasn\'t even a word... \nMoving on.');
+    } else if ('string' === typeof response) {
+      alert('Sorry, wrong answer.');
+    } else {
+      alert('That wasn\'t even a word... \nMoving on.');
+    }
   }
 }
-
 // Number guessing game
 
 // This randomly generates the "magic number".
