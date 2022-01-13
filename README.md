@@ -9,7 +9,7 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 ### Links and Resources
 
 - I refered to the [MDN typeof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) while writing my JavaScript.
-- I refered to W3 Schools [JavaScript Math.random()](https://www.w3schools.com/jsref/jsref_random.asp) and [JavaScript Math.random()](https://www.w3schools.com/jsref/jsref_round.asp) to make a random number generator.
+- I refered to W3 Schools [JavaScript Math.random()](https://www.w3schools.com/jsref/jsref_random.asp) and [JavaScript Math.round()](https://www.w3schools.com/jsref/jsref_round.asp) to make a random number generator.
 
 ### Reflections and Comments
 
