@@ -4,6 +4,7 @@ let user = prompt('Welcome to the site! What is your name?');
 
 alert(`Welcome ${user}, I'm Jeff, the owner of this website.\nPlay some guessing games with the following prompts. Enjoy!`);
 
+// Personal trivia Yes/No questions
 
 // here is my question & answer & response array.
 // I'm using a 2D array as each question will have a set of 3 variables, a question, an answer, and a response
@@ -35,6 +36,8 @@ for (let i = qarArray.length-1; i >= 0; i--){
   }
 }
 
+// Number guessing game
+
 // This creates the "magic number".
 // Math.random() returns a random decimal between 0 and 1
 // I then multiply by 9 and add 1. The resulting decimal number should always be between 1 and 10.
@@ -51,12 +54,44 @@ for (let i = 0; i < 4; i++){
     correctcount++;
   } else if (guessnum > magicNumber){
     alert('Nope! Try a lower number.');
-  } else{
+  } else if (guessnum < magicNumber){
     alert('Nope! Try a higher number.');
+  } else {
+    alert('Nope! That wasn\'t a valid number');
   }
 }
 
+// Jolly Rancher multiple-answer guessing game
 
+// In this array I'm defining my favorite flavors of Jolly Rancher
+let favJRflavors = ['cherry','grape','watermelon'];
+
+// This for loop limits the number of attempts to 6
+for (let tries = 6; tries > 0; tries--){
+  let answer = prompt(`Guess my one of favorite flavors of Jolly Rancher. You have ${tries} tries to guess one.`).toLowerCase();
+  //console.log(answer);
+
+  // this boolean variable needs to exist to silence the failure prompts if the user's answer was correct
+  let correctGuess = false;
+
+  // this for loop will check the answer against each string in the array
+  for (let i = favJRflavors.length-1; i >= 0; i--){
+    //console.log('the answer checker loop ran');
+    if(favJRflavors[i] === answer){
+      alert(`Success! You guessed one of my favorite flavors! They are ${favJRflavors[0]}, ${favJRflavors[1]}, and ${favJRflavors[2]}.`);
+      tries = 1;
+      correctcount++;
+      correctGuess = true;
+    }
+  }
+  if(!correctGuess){
+    alert('Nope! That\'s not one of them.');
+  }
+
+  if(!correctGuess && tries === 1){
+    alert(`You've run out of tries. My favorite flavors are ${favJRflavors[0]}, ${favJRflavors[1]}, and ${favJRflavors[2]}.`);
+  }
+}
 
 alert(`Thanks for playing ${user}. You got ${correctcount} out of 7 questions correct.`);
 
