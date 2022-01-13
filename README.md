@@ -21,3 +21,8 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 - `for` loops are a little tricky but I think I have the hang of them. That said, I'm looking forward to the future tools we'll be learning to perhaps `break` out of loops. Without being able to break out of a for loop, I had to keep track of the user's success or failure in order to jump over failure alerts.
 - Overall, I'm happy with myself. I think I achieved *all of the stretch goals*, too.
+
+#### Lab 04
+
+- Driver: Micha Davis
+- Navigator: Jeffrey Jenkins
