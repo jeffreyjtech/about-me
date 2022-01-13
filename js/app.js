@@ -23,6 +23,8 @@ personalTrivia();
 
 guessNumber();
 
+jollyRancher();
+
 function personalTrivia(){
   alert('The following questions will quiz you on some random facts about me. Please answer yes or no.');
 
@@ -72,36 +74,36 @@ function guessNumber(){
   }
 }
 // Jolly Rancher multiple-answer guessing game
-
+function jollyRancher(){
 // In this array I'm defining my favorite flavors of Jolly Rancher
-let favJRflavors = ['cherry','grape','watermelon'];
+  let favJRflavors = ['cherry','grape','watermelon'];
 
-// This for loop limits the number of attempts to 6
-for (let tries = 6; tries > 0; tries--){
-  let answer = prompt(`Guess my one of favorite flavors of Jolly Rancher. You have ${tries} tries to guess one.`).toLowerCase();
-  //console.log(answer);
+  // This for loop limits the number of attempts to 6
+  for (let tries = 6; tries > 0; tries--){
+    let answer = prompt(`Guess my one of favorite flavors of Jolly Rancher. You have ${tries} tries to guess one.`).toLowerCase();
+    //console.log(answer);
 
-  // this boolean variable needs to exist to silence the failure prompts if the user's answer was correct
-  // I believe I could avoid this with a break statement
-  let correctGuess = false;
+    // this boolean variable needs to exist to silence the failure prompts if the user's answer was correct
+    // I believe I could avoid this with a break statement
+    let correctGuess = false;
 
-  // this for loop will check the answer against each string in the array
-  for (let i = favJRflavors.length-1; i >= 0; i--){
-    //console.log('the answer checker loop ran');
-    if(favJRflavors[i] === answer){
-      alert(`Success! You guessed one of my favorite flavors! They are ${favJRflavors[0]}, ${favJRflavors[1]}, and ${favJRflavors[2]}.`);
-      tries = 1;
-      correctcount++;
-      correctGuess = true;
+    // this for loop will check the answer against each string in the array
+    for (let i = favJRflavors.length-1; i >= 0; i--){
+      //console.log('the answer checker loop ran');
+      if(favJRflavors[i] === answer){
+        alert(`Success! You guessed one of my favorite flavors! They are ${favJRflavors[0]}, ${favJRflavors[1]}, and ${favJRflavors[2]}.`);
+        tries = 1;
+        correctcount++;
+        correctGuess = true;
+      }
+    }
+    if(!correctGuess){
+      alert('Nope! That\'s not one of them.');
+    }
+
+    if(!correctGuess && tries === 1){
+      alert(`You've run out of tries. My favorite flavors are ${favJRflavors[0]}, ${favJRflavors[1]}, and ${favJRflavors[2]}.`);
     }
   }
-  if(!correctGuess){
-    alert('Nope! That\'s not one of them.');
-  }
-
-  if(!correctGuess && tries === 1){
-    alert(`You've run out of tries. My favorite flavors are ${favJRflavors[0]}, ${favJRflavors[1]}, and ${favJRflavors[2]}.`);
-  }
 }
-
 alert(`Thanks for playing ${user}. You got ${correctcount} out of 7 questions correct.`);
