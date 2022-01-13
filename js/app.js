@@ -17,9 +17,12 @@ const qarArray = [
   ['Have I ever walked on the moon?','no','Nope. I\'d pay any sum of money to walk on the Moon.']
 ];
 
+let correctcount = 0;
 //console.table(qarArray);
 personalTrivia();
-let correctcount = 0;
+
+guessNumber();
+
 function personalTrivia(){
   alert('The following questions will quiz you on some random facts about me. Please answer yes or no.');
 
@@ -42,32 +45,32 @@ function personalTrivia(){
 // Math.random() returns a random decimal between 0 and 1
 // I then multiply by 9 and add 1. The resulting decimal number should always be between 1 and 10.
 // Then Math.round() rounds the decimal number to the nearest integer
+function guessNumber(){
+  let magicNumber = Math.round(Math.random()*9+1);
+  //console.log(magicNumber);
 
-let magicNumber = Math.round(Math.random()*9+1);
-//console.log(magicNumber);
+  for (let i = 4; i > 0; i--){
+    let correctGuess = false;
 
-for (let i = 4; i > 0; i--){
-  let correctGuess = false;
+    let guessnum = parseInt(prompt(`Guess the magic number! It's a whole number between 1 and 10. You have ${i} tries.`));
+    if (guessnum === magicNumber){
+      i = 1;
+      alert(`You got it! The magic number is ${magicNumber}.`);
+      correctcount++;
+      correctGuess = true;
+    } else if (guessnum > magicNumber){
+      alert('Nope! That\'s too high.');
+    } else if (guessnum < magicNumber){
+      alert('Nope! That\'s too low.');
+    } else {
+      alert('Nope! That wasn\'t a valid number.');
+    }
 
-  let guessnum = parseInt(prompt(`Guess the magic number! It's a whole number between 1 and 10. You have ${i} tries.`));
-  if (guessnum === magicNumber){
-    i = 1;
-    alert(`You got it! The magic number is ${magicNumber}.`);
-    correctcount++;
-    correctGuess = true;
-  } else if (guessnum > magicNumber){
-    alert('Nope! That\'s too high.');
-  } else if (guessnum < magicNumber){
-    alert('Nope! That\'s too low.');
-  } else {
-    alert('Nope! That wasn\'t a valid number.');
-  }
-
-  if(!correctGuess && i === 1){
-    alert(`You've run out of tries. The magic number is ${magicNumber}.`);
+    if(!correctGuess && i === 1){
+      alert(`You've run out of tries. The magic number is ${magicNumber}.`);
+    }
   }
 }
-
 // Jolly Rancher multiple-answer guessing game
 
 // In this array I'm defining my favorite flavors of Jolly Rancher
