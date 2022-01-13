@@ -2,7 +2,7 @@
 
 ## About Me
 
-This biographical website presents information about me, Jeffrey Jenkins. You can participate in a personal trivia game about me, a number guessing game, and question guessing game. Then you can read a few words I've written about myself, including my job experience, education, and my top 10 animes.
+This biographical website presents information about me, Jeffrey Jenkins. You can participate in a personal trivia game about me, a number guessing game, and a single-question multi-answer guessing game. Then you can read a few words I've written about myself, including my job experience, education, and my top 10 animes.
 
 ### Author: Jeffrey Jenkins
 
