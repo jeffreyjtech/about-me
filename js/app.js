@@ -27,13 +27,36 @@ for (let i = qarArray.length-1; i >= 0; i--){
   if (qarArray[i][1] === response.toLowerCase()){
     correctcount++;
     alert(qarArray[i][2]);
-    console.log(`Correct on "${qarArray[i][0]}"`);
+    //console.log(`Correct on "${qarArray[i][0]}"`);
   } else if ('string' === typeof response) {
     alert('Sorry, wrong answer.');
   } else {
     alert('That wasn\'t even a word... \nMoving on.');
   }
 }
+
+// This creates the "magic number".
+// Math.random() returns a random decimal between 0 and 1
+// I then multiply by 9 and add 1. The resulting decimal number should always be between 1 and 10.
+// Then Math.round() rounds the decimal number to the nearest integer
+
+let magicNumber = Math.round(Math.random()*9+1);
+console.log(magicNumber);
+
+for (let i = 0; i < 4; i++){
+  let guessnum = parseInt(prompt('Guess the magic number! It\'s between 1 and 10. You have 4 tries.'));
+  if (guessnum === magicNumber){
+    i = 3;
+    alert(`You got it! The magic number is ${magicNumber}.`);
+    correctcount++;
+  } else if (guessnum > magicNumber){
+    alert('Nope! Try a lower number.');
+  } else{
+    alert('Nope! Try a higher number.');
+  }
+}
+
+
 
 alert(`Thanks for playing ${user}. You got ${correctcount} out of 7 questions correct.`);
 
