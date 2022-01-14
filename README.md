@@ -26,3 +26,4 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 - Driver: Micha Davis
 - Navigator: Jeffrey Jenkins
+- I was not able to get the Google Chrome accessibility tool to evaluate on my color choices.
