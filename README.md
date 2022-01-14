@@ -10,6 +10,8 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 - I refered to the [MDN typeof reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) while writing my JavaScript.
 - I refered to W3 Schools [JavaScript Math.random()](https://www.w3schools.com/jsref/jsref_random.asp) and [JavaScript Math.round()](https://www.w3schools.com/jsref/jsref_round.asp) to make a random number generator.
+- I refer to W3 Schools [HTML <meta> charset Attribute](https://www.w3schools.com/tags/att_meta_charset.asp) to set the charset on my page to UTF-8.
+- Passed the final version of index.html with no issues through the validators at [W3.org](https://validator.w3.org/#validate_by_input+with_options) and [FreeFormatter.com](https://www.freeformatter.com/html-validator.html).
 
 ### Reflections and Comments
 
@@ -26,4 +28,8 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 - Driver: Micha Davis
 - Navigator: Jeffrey Jenkins
-- I was not able to get the Google Chrome accessibility tool to evaluate on my color choices.
+- I was not able to get the Google Chrome accessibility tool to evaluate my color choices.
+
+#### Lab 05b
+
+- My finishing touches on this project were improvements to dynamic widths of my primary HTML elements and fixing up issues found in the HTML validators linked above. I'm quite happy with it.
