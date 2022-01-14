@@ -7,11 +7,14 @@ header, main{
   padding: 0.7em 0.7em ;
   background-color: rgb(253, 253, 244);
   width: 80%;
-  margin: 1vh 10%;
+  margin: auto;
+  margin-top: 10px;
   border: 2px groove rgb(82, 54, 28);
   box-shadow: 2em 0.1em 2em rgba(0,0,0,0.3);
   overflow: auto;
   width: 80%;
+  min-width: 600px;
+  max-width: 960px;
 }
 header{
   text-align: center;
@@ -27,6 +30,7 @@ aside{
   width: 30%;
   float: left;
   height: 100%;
+  min-width: min-content;
 }
 h1 {
   font-size: x-large;
