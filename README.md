@@ -28,7 +28,7 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 
 - Driver: Micha Davis
 - Navigator: Jeffrey Jenkins
-- I was not able to get the Google Chrome accessibility tool to evaluate my color choices. Since the color scheme is essentially white-on-black so I have no concerns about a lack of contrast for readability.
+- I was not able to get the Google Chrome accessibility tool to evaluate my color choices. Since the color scheme is essentially white-on-black I have no concerns about a lack of contrast for readability.
 
 #### Lab 05b
 
