@@ -4,14 +4,29 @@ body{
   font-family:'Courier New', Courier, monospace;
 }
 header, main{
-  padding: 0.3em 0.5em;
+  padding: 0.7em 0.7em ;
   background-color: rgb(253, 253, 244);
   width: 80%;
   margin: 1vh 10%;
   border: 2px groove rgb(82, 54, 28);
+  box-shadow: 2em 0.1em 2em rgba(0,0,0,0.3);
+  overflow: auto;
+  width: 80%;
 }
 header{
   text-align: center;
+}
+section{
+  border-left: thin groove rgba(61, 49, 37, 0.336);
+  float: right;
+  padding-left: 1%;
+  width: 65%;
+}
+aside{
+  padding: 1%;
+  width: 30%;
+  float: left;
+  height: 100%;
 }
 h1 {
   font-size: x-large;
@@ -23,13 +38,16 @@ h2 {
   margin-top: 0.3em;
   font-size: larger;
 }
+p{
+
+  text-align: justify;
+}
 ul{
   list-style: circle;
   margin-left: 1em;
 }
 ol{
-  list-style: decimal;
-  margin-left: 2em;
+  list-style: decimal inside;
 }
 i{
   font-style: italic;
