@@ -2,32 +2,39 @@
 
 body{
   font-family:'Courier New', Courier, monospace;
+  background-color: #d4dcec;
 }
-header, main{
-  padding: 0.7em 0.7em ;
-  background-color: rgb(253, 253, 244);
+main{
+  color:#26221D;
+  background-color: #e7e4de;
   width: 80%;
   margin: auto;
   margin-top: 10px;
-  border: 2px groove rgb(82, 54, 28);
+  border: 2px solid rgb(82, 54, 28);
+  border-radius: 2px;
   box-shadow: 2em 0.1em 2em rgba(0,0,0,0.3);
   overflow: auto;
   width: 80%;
   min-width: 600px;
   max-width: 960px;
 }
+aside, section{
+  padding: 1em 0.7em ;
+}
 header{
   text-align: center;
+  border-bottom:  #5F3516;
+  border-bottom-style: dashed;
+  padding: 0.5em;
 }
 section{
-  border-left: thin groove rgba(61, 49, 37, 0.336);
+  border-left: dashed #5F3516;
   float: right;
   padding-left: 1%;
-  width: 65%;
+  width: 63%;
 }
 aside{
-  padding: 1%;
-  width: 30%;
+  width: 29%;
   float: left;
   height: 100%;
   min-width: min-content;
@@ -41,6 +48,13 @@ h1 {
 h2 {
   margin-top: 0.3em;
   font-size: larger;
+}
+hr{
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: #535731;
+  border-top: double 5px;
 }
 p{
 
