@@ -12,6 +12,7 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 - I refered to W3 Schools [JavaScript Math.random()](https://www.w3schools.com/jsref/jsref_random.asp) and [JavaScript Math.round()](https://www.w3schools.com/jsref/jsref_round.asp) to make a random number generator.
 - I refer to W3 Schools [HTML <meta> charset Attribute](https://www.w3schools.com/tags/att_meta_charset.asp) to set the charset on my page to UTF-8.
 - Passed the final version of index.html with no issues through the validators at [W3.org](https://validator.w3.org/#validate_by_input+with_options) and [FreeFormatter.com](https://www.freeformatter.com/html-validator.html).
+- Took color scheme insipiration from [Designspiration](https://www.designspiration.com/).
 
 ### Reflections and Comments
 
@@ -33,3 +34,4 @@ This biographical website presents information about me, Jeffrey Jenkins. You ca
 #### Lab 05b
 
 - My finishing touches on this project were improvements to dynamic widths of my primary HTML elements and fixing up issues found in the HTML validators linked above. I'm quite happy with it.
+- In an attempt to reach the stretch goal, I used Designsiration.com to apply a muted color scheme to my page.
